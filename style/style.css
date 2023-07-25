@@ -64,14 +64,32 @@ header{
     color: aliceblue;
     font-size: 1.5em;
 }
+.main-section{
+    margin: 8vh auto;
+}
+.card-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    text-align: center;
+}
+.card-img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+.card-img img{
+    border-radius: 20px;
+}
+.card-group-2{
+    flex-direction: column-reverse;
+}
+.card-info{
+    color: #572ebb;
+}
 
 
-/* .banner{
-    color: aliceblue;
-    width: 60%;
-    margin: auto auto;
-    border: 2px solid red;
-} */
 
 @media only screen and (min-width: 768px) {
     .container{
@@ -95,5 +113,18 @@ header{
     }
     .banner p{
         font-size: 2em;
+    }
+    .card-info p{
+        font-size: large;
+        margin: auto 10%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .card-group{
+        flex-direction: row;
+    }
+    .card-info p{
+        font-size: larger;
+        margin: auto 10%;
     }
 }
