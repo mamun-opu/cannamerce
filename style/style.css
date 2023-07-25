@@ -4,55 +4,96 @@
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
 }
-body{
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/* header{
+    width: 100%;
     height: 100vh;
-    background-color: #000;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+} */
+header{
+    background-color: #572ebb;
+}
+
+.logo img{
+    width: 110px;
+    display: none;
+}
+.nav-bar{
+    min-height: 80px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: auto 0;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: aliceblue;
+    list-style-type: none;
+}
+.navigation a:hover{
+    color: #A076F9;
+}
+.banner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
     background-image: url('../img/banner.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-header{
-    width: 100%;
-}
-.container{
-    width: 80%;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-}
-.navbar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-}
-.container p{
-    font-size: 2em;
+.banner p{
+    font-family: 'Lumanosimo', cursive;
+    margin-top: 30px;
     color: aliceblue;
+    font-size: 1.5em;
 }
-.navbar a{
-    text-decoration: none;
-    color: #D7BBF5; 
-    margin-top: 5px;
-}
-.navbar a:hover{
-    color: #A076F9;
-}
-main{
-    margin-top: 100vh;
-}
+
+
+/* .banner{
+    color: aliceblue;
+    width: 60%;
+    margin: auto auto;
+    border: 2px solid red;
+} */
 
 @media only screen and (min-width: 768px) {
     .container{
         flex-direction: row;
         justify-content: space-between;
     }
-    .navbar{
+    .nav-bar{
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo img{
+        display: block;
+    }
+    .nav-bar ul{
         flex-direction: row;
     }
-    .navbar a{
+    .nav-bar ul li{
         margin-left: 10px;
+    }
+    .banner p{
+        font-size: 2em;
     }
 }
