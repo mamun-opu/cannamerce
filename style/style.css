@@ -86,10 +86,40 @@ header{
     flex-direction: column-reverse;
 }
 .card-info{
+    margin-top: 20px;
     color: #572ebb;
 }
 
+.shop-nav{
+    display: flex;
+    justify-content: space-between;
+}
 
+.display-card{
+    /* background-color: #A076F9; */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #A076F9;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.display-card img{
+    max-width: 80%;
+    border-radius: 10px;
+}
+.display-card p{
+    margin-top: 20px;
+    font-weight: 800;
+    color: #572ebb;
+}
+.display-card:hover{
+    transform: scale(1.05);
+}
 
 @media only screen and (min-width: 768px) {
     .container{
