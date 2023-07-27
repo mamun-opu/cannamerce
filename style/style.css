@@ -72,11 +72,10 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 25px 0;
+    margin: 20px 0;
     text-align: center;
 }
 .card-img{
-    max-width: 100%;
     border-radius: 20px;
 }
 .card-img img{
@@ -152,6 +151,50 @@ header{
     color: #572ebb;
 }
 
+.news-letter{
+    margin-top: 10%;
+    background-color: #011a08;
+    width: 100%;
+}
+.newsletter-info{
+    display: flex;
+}
+
+.canabis-info{
+    color: aliceblue;
+    padding: 20px;
+}
+.canabis-info h4{
+    /* font-size: xx-large; */
+    font-size: larger;
+    margin-top: 15px;
+}
+.canabis-info p{
+    margin-top: 10px;
+    font-size: larger;
+}
+.canabis-info button{
+    margin: 10px 0;
+    width: 80px;
+    height: 30px;
+    background: linear-gradient(to left, #301969, #572ebb);
+    border-radius: 5px;
+    color: aliceblue;
+    border: none;
+    transition: 0.3s;
+}
+
+.news-letter button a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.news-letter button:hover{
+    transform: scale(1.05);
+}
+
+.canabis-img img{
+    display: none;
+}
 
 
 
@@ -204,7 +247,25 @@ header{
         flex-direction: row;
     }
     .first-row{
-        max-width: 66%;
+        max-width: 65%;
     }
-
+    .canabis-img img{
+        display: block;
+        max-width: 100%;
+        margin-top: -70px;
+    }
+    .canabis-info h4{
+        font-size: x-large;
+        margin: 20px 0;
+    }
+    .canabis-info{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .canabis-info button{
+        margin-top: 20px;
+    }
+    
 }
