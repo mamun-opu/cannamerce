@@ -4,6 +4,8 @@
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* styles for container */
 .container{
     width: 80%;
     margin: 0 auto;
@@ -16,6 +18,8 @@
     background-position: center center;
     background-repeat: no-repeat;
 } */
+
+/* styles for header start here*/
 header{
     background-color: #572ebb;
 }
@@ -49,6 +53,9 @@ header{
 .navigation a:hover{
     color: #A076F9;
 }
+/* styles for header end here*/
+
+/* styles for banner start here */
 .banner{
     height: 100vh;
     display: flex;
@@ -64,6 +71,9 @@ header{
     color: aliceblue;
     font-size: 1.5em;
 }
+/* styles for banner end here */
+
+/* styles for main section start here */
 .main-section{
     margin: 8vh auto;
 }
@@ -88,7 +98,9 @@ header{
     margin-top: 20px;
     color: #572ebb;
 }
+/* styles for main section end here */
 
+/* styles for shop category section start here */
 .shop-nav{
     display: flex;
     justify-content: space-between;
@@ -151,6 +163,10 @@ header{
     color: #572ebb;
 }
 
+/* styles for shop category section start here */
+
+/* styles for news-letter section start here */
+
 .news-letter{
     margin-top: 10%;
     background-color: #011a08;
@@ -195,9 +211,49 @@ header{
 .canabis-img img{
     display: none;
 }
+/* styles for news-letter section end here */
+
+/* styles for footer section start here */
+.footer-div{
+    padding-top: 10px;
+    color: aliceblue;
+}
+.footer-div hr{
+    background: linear-gradient(to left,  aliceblue, green);
+    border: none;
+    border-radius: 2px;
+    height: 3px;
+}
+.footer-ul{
+    margin-top: 20px;
+    list-style-type: none;
+    padding-left: 10px;
+}
+.footer-ul li a{
+    text-decoration: none;
+    color: green;
+}
+
+.footer-ul li a:hover{
+    color: #d9ccf4;
+}
+#footer-section{
+    background-image: url('../img/footer.jpg');
+    background-size: cover;
+    background-position: bottom bottom;
+    background-repeat: no-repeat;
+}
+
+#footer-section p{
+    margin-top: 30px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    text-align: center;
+    font-size: small;
+}
 
 
-
+/* styles for notepad */
 @media only screen and (min-width: 768px) {
     .container{
         flex-direction: row;
@@ -232,9 +288,14 @@ header{
     .second-row{
         width: 50%;
     }
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+    }
     
 }
 
+/* styles for desktop */
 @media screen and (min-width: 992px) {
     .card-group{
         flex-direction: row;
