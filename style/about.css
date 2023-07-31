@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* styles for container */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* styles for header start here*/
+header{
+    background-color: #011a08;
+}
+
+#logo img{
+    width: 110px;
+    display: none;
+}
+#nav-bar{
+    min-height: 80px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: auto 0;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: aliceblue;
+    list-style-type: none;
+}
+.navigation a:hover{
+    color: green;
+}
+/* styles for header end here*/
+/* styles for main start here*/
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 0;
+    color: #16361c;
+}
+#about-us{
+    width: 80%;
+}
+.articles{
+    padding: 10px;
+}
+
+#services{
+    margin-top: 20px;
+    padding: 10px 10%;
+    text-align: justify;
+    background-color: #e4eade;
+}
+.service-article{
+    margin: 10px 0;
+}
+.service-heading{
+    color: #16361c;
+    font-weight: 600;
+}
+#team-member{
+    padding: 20px;
+    background-color: #eeeeee;
+}
+.members{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.member-info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #16361c;
+}
+.member-info h2{
+    margin-bottom: 5px;
+}
+.member-info h6{
+    margin-bottom: 10px;
+}
+.member-info button{
+    width: 100px;
+    height: 30px;
+    margin: 10px 0;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+}
+.member-img{
+    width: 40%;
+}
+.member-img img{
+    max-width: 150px;
+    border-radius: 50%;
+    margin-left: -20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #nav-bar{
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo img{
+        display: block;
+    }
+    #nav-bar ul{
+        flex-direction: row;
+    }
+    #nav-bar ul li{
+        margin-left: 10px;
+    }
+    #main{
+        flex-direction: row;
+        align-items: start;
+        margin: 0 10%;
+
+    }
+    #about-us, #services{
+        width: 50%;
+    }
+    #services{
+        padding: 20px 10px;
+        height: 70vh;
+    }
+}
+@media screen and (min-width: 992px) {
+    #services{
+        height: 45vh;
+        padding: 20px 10px;
+    }
+}

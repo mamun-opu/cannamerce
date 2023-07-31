@@ -10,25 +10,18 @@
     width: 80%;
     margin: 0 auto;
 }
-/* header{
-    width: 100%;
-    height: 100vh;
-    background-image: url('../img/banner.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-} */
+
 
 /* styles for header start here*/
 header{
-    background-color: #572ebb;
+    background-color: #011a08;
 }
 
-.logo img{
+#logo img{
     width: 110px;
     display: none;
 }
-.nav-bar{
+#nav-bar{
     min-height: 80px;
     padding: 10px 0;
     display: flex;
@@ -37,7 +30,7 @@ header{
     align-items: center;
 }
 
-.nav-bar ul{
+#nav-bar ul{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,12 +44,12 @@ header{
     list-style-type: none;
 }
 .navigation a:hover{
-    color: #A076F9;
+    color: green;
 }
 /* styles for header end here*/
 
 /* styles for banner start here */
-.banner{
+#banner{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -65,7 +58,7 @@ header{
     background-position: center center;
     background-repeat: no-repeat;
 }
-.banner p{
+#banner p{
     font-family: 'Lumanosimo', cursive;
     margin-top: 30px;
     color: aliceblue;
@@ -74,7 +67,7 @@ header{
 /* styles for banner end here */
 
 /* styles for main section start here */
-.main-section{
+#main-section{
     margin: 8vh auto;
 }
 .card-group{
@@ -96,7 +89,7 @@ header{
 }
 .card-info{
     margin-top: 20px;
-    color: #572ebb;
+    color: #298142;
 }
 /* styles for main section end here */
 
@@ -116,7 +109,7 @@ header{
     margin: 20px;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 10px 10px 20px #A076F9;
+    box-shadow: 8px 8px 30px #298142;
     width: 80%;
     transition: 0.3s;
     display: flex;
@@ -238,6 +231,7 @@ header{
     color: #d9ccf4;
 }
 #footer-section{
+    padding-top: 20px;
     background-image: url('../img/footer.jpg');
     background-size: cover;
     background-position: bottom bottom;
@@ -253,28 +247,29 @@ header{
 }
 
 
+
 /* styles for notepad */
 @media only screen and (min-width: 768px) {
     .container{
         flex-direction: row;
         justify-content: space-between;
     }
-    .nav-bar{
+    #nav-bar{
         padding: 0;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
-    .logo img{
+    #logo img{
         display: block;
     }
-    .nav-bar ul{
+    #nav-bar ul{
         flex-direction: row;
     }
-    .nav-bar ul li{
+    #nav-bar ul li{
         margin-left: 10px;
     }
-    .banner p{
+    #banner p{
         font-size: 2em;
     }
     .card-info p{
