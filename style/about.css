@@ -76,20 +76,21 @@ header{
     color: #16361c;
     font-weight: 600;
 }
+/* styles for main end here*/
 #team-member{
     padding: 20px;
     background-color: #eeeeee;
 }
 .members{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin: 20px;
 }
 .member-info{
     width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;
@@ -113,10 +114,62 @@ header{
     width: 40%;
 }
 .member-img img{
+    display: block;
     max-width: 150px;
     border-radius: 50%;
-    margin-left: -20px;
+    margin: 0 auto -20px;
+    position: relative;
 }
+.group-members{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* styles for footer section start here */
+.footer-div{
+    padding-top: 10px;
+    color: aliceblue;
+}
+.footer-div hr{
+    background: linear-gradient(to left,  aliceblue, green);
+    border: none;
+    border-radius: 2px;
+    height: 3px;
+}
+.footer-ul{
+    margin-top: 5px;
+    list-style-type: none;
+    padding-left: 5px;
+}
+.footer-ul li a{
+    text-decoration: none;
+    color: green;
+}
+#footer-info{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    backdrop-filter: blur(8px) saturate(70%);
+}
+.footer-ul li a:hover{
+    color: #d9ccf4;
+}
+#footer-section{
+    background-image: url('../img/footer.jpg');
+    background-size: cover;
+    background-position: bottom bottom;
+    background-repeat: no-repeat;
+}
+
+#footer-section p{
+    margin-top: 30px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    text-align: center;
+    font-size: small;
+}
+
+
 
 @media only screen and (min-width: 768px) {
     .container{
@@ -151,10 +204,25 @@ header{
         padding: 20px 10px;
         height: 70vh;
     }
+    .members{
+        flex-direction: row;
+    }
+    .member-img img{
+        margin-right: -20px;
+
+    }
+    #footer-info > .container{
+        display: flex;
+        flex-direction: row;
+    }
+   
 }
 @media screen and (min-width: 992px) {
     #services{
         height: 45vh;
         padding: 20px 10px;
+    }
+    .group-members{
+        flex-direction: row;
     }
 }

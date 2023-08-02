@@ -3,6 +3,7 @@
     padding: 0;
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 /* styles for container */
@@ -58,11 +59,24 @@ header{
     background-position: center center;
     background-repeat: no-repeat;
 }
-#banner p{
-    font-family: 'Lumanosimo', cursive;
+#banner-info{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: 3px solid aliceblue;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    backdrop-filter: blur(8px) saturate(70%);
+    text-align: center;
+}
+#banner-info p{
     margin-top: 30px;
     color: aliceblue;
     font-size: 1.5em;
+    color: greenyellow;
+    
 }
 /* styles for banner end here */
 
@@ -218,20 +232,23 @@ header{
     height: 3px;
 }
 .footer-ul{
-    margin-top: 20px;
+    margin-top: 5px;
     list-style-type: none;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 .footer-ul li a{
     text-decoration: none;
     color: green;
 }
-
+#footer-info{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    backdrop-filter: blur(8px) saturate(70%);
+}
 .footer-ul li a:hover{
     color: #d9ccf4;
 }
 #footer-section{
-    padding-top: 20px;
     background-image: url('../img/footer.jpg');
     background-size: cover;
     background-position: bottom bottom;
@@ -283,7 +300,7 @@ header{
     .second-row{
         width: 50%;
     }
-    .footer-container{
+    #footer-info > .container{
         display: flex;
         flex-direction: row;
     }
