@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* styles for header start here*/
+header{
+    background-color: #011a08;
+}
+
+#logo img{
+    width: 110px;
+    display: none;
+}
+#nav-bar{
+    min-height: 80px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: auto 0;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: aliceblue;
+    list-style-type: none;
+}
+.navigation a:hover{
+    color: green;
+}
+/* styles for header end here*/
+
+#form-section{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background: url('../img/sign-up.jpg');
+}
+
+#sign-up-form{
+    width: 60%;
+    margin: 0 auto;
+    background-color: #22400f;
+    padding: 5%;
+    border-radius: 5px;
+    height:fit-content
+}
+
+#name-field{
+    display: flex;
+    flex-direction: column;
+}
+
+  
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-field label{
+    color: aliceblue;
+    font-weight: bold;
+    padding: 10px 5px 0 0;
+}
+.input-field input{
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.input-field input:focus{
+    outline: none;
+}
+.input-field button{
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: none;
+    color: #22400f;
+    font-weight: bold;
+}
+.input-field button:hover{
+    cursor: pointer;
+}
+
+#sign-up-form>form>p{
+    color: aliceblue;
+    margin-top: 10px;
+}
+#sign-up-form>form>p>a{
+    color: greenyellow;
+}
+
+
+/* styles for footer section start here */
+.footer-div{
+    padding-top: 10px;
+    color: aliceblue;
+}
+.footer-div hr{
+    background: linear-gradient(to left,  aliceblue, green);
+    border: none;
+    border-radius: 2px;
+    height: 3px;
+}
+.footer-ul{
+    margin-top: 5px;
+    list-style-type: none;
+    padding-left: 5px;
+}
+.footer-ul li a{
+    text-decoration: none;
+    color: green;
+}
+#footer-info{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    backdrop-filter: blur(8px) saturate(70%);
+}
+.footer-ul li a:hover{
+    color: #d9ccf4;
+}
+#footer-section{
+    background-image: url('../img/footer.jpg');
+    background-size: cover;
+    background-position: bottom bottom;
+    background-repeat: no-repeat;
+}
+
+#footer-section p{
+    margin-top: 30px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    text-align: center;
+    font-size: small;
+}
+
+
+
+
+
+/* styles for notepad */
+@media only screen and (min-width: 768px) {
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #nav-bar{
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo img{
+        display: block;
+    }
+    #nav-bar ul{
+        flex-direction: row;
+    }
+    #nav-bar ul li{
+        margin-left: 10px;
+    }
+    #sign-up-form{
+        width: 40%;
+    }
+    #name-field{
+        flex-direction: row;
+        width: 50%;
+    }
+    #name-field > .input-field{
+        max-width: 95%;
+    }
+    #name-field > .input-field:nth-child(2) {
+        margin-left: 5%;
+    } 
+    #name-field > .input-field:nth-child(1) {
+        margin-right: 5%;
+    }
+    #footer-info > .container{
+        display: flex;
+        flex-direction: row;
+    }
+      
+}
+@media only screen and (min-width: 1070px) {
+    #name-field{
+        width: 50%;
+    }
+    #name-field > .input-field{
+        width: 95%;
+    }
+    #name-field > .input-field:nth-child(2) {
+        margin-left: 10%;
+    } 
+    #name-field > .input-field:nth-child(1) {
+        margin-right: 10%;
+    }
+}
