@@ -24,11 +24,8 @@ header{
 }
 #nav-bar{
     min-height: 80px;
-    padding: 10px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #nav-bar ul{
@@ -36,45 +33,51 @@ header{
     flex-direction: column;
     align-items: center;
     list-style-type: none;
-    margin: auto 0;
 }
 
-.navigation li a{
+.nav-link a{
     text-decoration: none;
     color: aliceblue;
     list-style-type: none;
 }
-.navigation a:hover{
+.nav-link{
+    width: 100vw;
+    padding: 3px 0 10px;
+    border-bottom: 1px solid #174409;
+    text-align: center;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    transform: scale(1.05);
+}
+.nav-link a:hover{
     color: green;
 }
 /* styles for header end here*/
 
 /* styles for banner start here */
 #banner{
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     background-image: url('../img/banner.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 #banner-info{
-    height: 50vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    border: 3px solid aliceblue;
-    background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4);
     backdrop-filter: blur(8px) saturate(70%);
     text-align: center;
 }
 #banner-info p{
-    margin-top: 30px;
-    color: aliceblue;
-    font-size: 1.5em;
+    font-size: 1em;
     color: greenyellow;
     
 }
@@ -82,7 +85,7 @@ header{
 
 /* styles for main section start here */
 #main-section{
-    margin: 8vh auto;
+    margin: 40px auto;
 }
 .card-group{
     width: 100%;
@@ -108,14 +111,12 @@ header{
 /* styles for main section end here */
 
 /* styles for shop category section start here */
-.shop-nav{
+
+.products-category{
     display: flex;
-    justify-content: space-between;
-}
-.products{
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .display-card{
@@ -124,7 +125,7 @@ header{
     padding: 10px;
     border-radius: 20px;
     box-shadow: 8px 8px 30px #298142;
-    width: 80%;
+    max-width: 400px;
     transition: 0.3s;
     display: flex;
     flex-direction: column;
@@ -277,6 +278,10 @@ header{
         justify-content: space-between;
         align-items: center;
     }
+    .nav-link{
+        width:max-content;
+        border-bottom: none;
+    }
     #logo img{
         display: block;
     }
@@ -287,18 +292,11 @@ header{
         margin-left: 10px;
     }
     #banner p{
-        font-size: 2em;
+        font-size: 1.3em;
     }
     .card-info p{
         font-size: large;
         margin: auto 10%;
-    }
-    .first-row{
-        display: flex;
-        flex-direction: row;
-    }
-    .second-row{
-        width: 50%;
     }
     #footer-info > .container{
         display: flex;
@@ -318,9 +316,6 @@ header{
     }
     .products{
         flex-direction: row;
-    }
-    .first-row{
-        max-width: 65%;
     }
     .canabis-img img{
         display: block;
