@@ -12,6 +12,23 @@
     margin: 0 auto;
 }
 
+.button{
+    width: 80px;
+    height: 30px;
+    background: linear-gradient(to left, #011a08, #174409);
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+.button a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.button:hover{
+    transform: scale(1.05);
+}
+
 
 /* styles for header start here*/
 header{
@@ -84,15 +101,20 @@ header{
 /* styles for banner end here */
 
 /* styles for main section start here */
-#main-section{
-    margin: 40px auto;
+#feature{
+    margin: 20px auto;
+}
+#feature h1{
+    text-align: center;
+    color: #011a08;
+    font-weight: bolder;
 }
 .card-group{
+    padding: 20px 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
     text-align: center;
 }
 .card-img{
@@ -100,12 +122,13 @@ header{
 }
 .card-img img{
     border-radius: 20px;
+    max-width: 80%;
 }
 .card-group-2{
     flex-direction: column-reverse;
 }
 .card-info{
-    margin-top: 20px;
+    margin-top: 5px;
     color: #298142;
 }
 /* styles for main section end here */
@@ -118,6 +141,7 @@ header{
     align-items: center;
     flex-wrap: wrap;
 }
+
 
 .display-card{
     /* background-color: #A076F9; */
@@ -143,32 +167,20 @@ header{
 .display-card p{
     margin-top: 10px;
     font-weight: 800;
-    color: #572ebb;
+    color: #298142;
     text-align: center;
 }
 
-
-
-.shop-nav button{
-    width: 80px;
-    height: 30px;
-    background: linear-gradient(to left, #301969, #572ebb);
-    border-radius: 5px;
-    color: aliceblue;
-    border: none;
-    transition: 0.3s;
+.category-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.shop-nav button a{
-    color: aliceblue;
-    text-decoration: none;
-}
-.shop-nav button:hover{
-    transform: scale(1.05);
-}
 
-.shop-nav h4{
-    color: #572ebb;
+.category-nav h4{
+    color:#174409;
+    font-weight: bolder;
 }
 
 /* styles for shop category section start here */
@@ -198,6 +210,9 @@ header{
     font-size: larger;
 }
 .canabis-info button{
+    margin-top: 10px;
+}
+/* .canabis-info button{
     margin: 10px 0;
     width: 80px;
     height: 30px;
@@ -214,7 +229,7 @@ header{
 }
 .news-letter button:hover{
     transform: scale(1.05);
-}
+} */
 
 .canabis-img img{
     display: none;
@@ -310,9 +325,18 @@ header{
     .card-group{
         flex-direction: row;
     }
+    .card-img{
+        width: 40%;
+    }
+    .card-img img{
+        width: 100%;
+    }
+    .card-info{
+        width: 60%;
+    }
     .card-info p{
         font-size: larger;
-        margin: auto 10%;
+        text-align: justify;
     }
     .products{
         flex-direction: row;
