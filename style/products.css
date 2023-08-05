@@ -1,3 +1,4 @@
+/*************** formatting  ***************/
 *{
     margin: 0;
     padding: 0;
@@ -10,17 +11,20 @@
     margin: 0 auto;
 }
 
-
+/***************styles for product section ******************/
 #products{
     margin: 30px 0;
 }
 
+/***************styles for flowrs, edibles vapour named divs ******************/
 .flowers, .edibles, .vapour{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+
+/***************styles for product card starts******************/
 .product-card{
     margin: 20px;
     display: flex;
@@ -58,7 +62,9 @@
 .product-card p{
     margin: 5px 0;
 }
+/***************styles for product card ends ******************/
 
+/***************styles for product h1******************/
 h1{
     color: #011a08;
     font-size: larger;

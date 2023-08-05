@@ -1,7 +1,10 @@
+/***************styles contact section ******************/
 .contact{
     display: flex;
     justify-content: center;
 }
+
+/***************styles left side divs ******************/
 .left{
     display: flex;
     flex-direction: column;
@@ -12,6 +15,7 @@
     padding: 20px;
     border-radius: 5px;
 }
+/***************styles right side divs ******************/
 .right{
     display: flex;
     flex-direction: column;
@@ -22,19 +26,23 @@
     padding: 20px;
     border-radius: 5px;
 }
-
+/***************styles for h1 ******************/
 #contact-us h1{
     margin: 20px;
 }
+/***************styles for childs ******************/
 .child{
     box-shadow: 5px 5px 10px gray;
 }
+/***************styles for left divs second child ******************/
 .left:nth-child(2)  {
     margin-top: 30vh;
 }
+/***************styles for right divs first child ******************/
 .right:first-child{
     margin-top: 30vh;
 }
+/***************styles for right divs second child ******************/
 .right:nth-child(2){
     margin-top: 30vh;
 }
@@ -42,6 +50,7 @@
     text-align: end;
 }
 
+/***************styles for map ******************/
 #map{
     width: 320px;
     height: 200px;
@@ -54,6 +63,7 @@
     height: 200px;
     padding: 5px;
 }
+/***************styles for table ******************/
 #office-hours-table{
     min-width: 320px;
     margin: 20px auto;

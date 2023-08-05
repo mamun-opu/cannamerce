@@ -1,3 +1,4 @@
+/*************** Formatting starts******************/
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +11,9 @@
     margin: 0 auto;
 }
 
+/*************** Formatting ends ******************/
 
+/*************** styles for form ******************/
 
 #form-section{
     height: 90vh;
@@ -34,13 +37,14 @@
 }
 
   
-
+/*************** styles for input field******************/
 .input-field{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
+/*************** styles for input field lebel ******************/
 .input-field label{
     color: aliceblue;
     font-weight: bold;
@@ -56,6 +60,7 @@
 .input-field input:focus{
     outline: none;
 }
+/*************** styles for input field button ******************/
 .input-field button{
     height: 35px;
     border-radius: 5px;
@@ -64,6 +69,8 @@
     color: #22400f;
     font-weight: bold;
 }
+
+
 .input-field button:hover{
     cursor: pointer;
 }
@@ -77,7 +84,7 @@
 }
 
 
-/* styles for notepad */
+/************* styles for notepad ******************/
 @media only screen and (min-width: 768px) {
     .container{
         flex-direction: row;
@@ -120,6 +127,8 @@
     }
       
 }
+
+/************* styles for desktop ******************/
 @media only screen and (min-width: 1070px) {
     #name-field{
         width: 50%;

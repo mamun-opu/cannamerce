@@ -42,6 +42,8 @@
     font-weight: 600;
 }
 /* styles for main end here*/
+/* styles for display team members start here*/
+
 #team-member{
     padding: 20px;
     background-color: #eeeeee;
@@ -92,10 +94,10 @@
     display: flex;
     flex-direction: column;
 }
+/* styles for display team members ends here*/
 
 
-
-
+/***************styles for notepad ******************/
 @media only screen and (min-width: 768px) {
 
     #main{
@@ -119,6 +121,7 @@
     }
    
 }
+/***************styles for laptop ******************/
 @media screen and (min-width: 992px) {
     #services{
         height: 45vh;
@@ -128,6 +131,7 @@
         flex-direction: row;
     }
 }
+/***************styles for desktop ******************/
 @media screen and (min-width: 1350px) {
     .member-img img{
         margin-right: -70px;

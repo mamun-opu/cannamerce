@@ -1,3 +1,4 @@
+/* Formatting  */
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +6,8 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
-
-/* styles for container */
+/* Formatting  */
+/* common css for all pages starts */
 .container{
     width: 80%;
     margin: 0 auto;
@@ -30,6 +31,7 @@
 .button:hover{
     transform: scale(1.05);
 }
+/* common css for all pages ends */
 
 
 /* styles for header start here*/
@@ -135,7 +137,7 @@ header{
 }
 /* styles for main section end here */
 
-/* styles for shop category section start here */
+/* styles for products category section start here */
 
 .products-category{
     display: flex;
@@ -146,7 +148,6 @@ header{
 
 
 .display-card{
-    /* background-color: #A076F9; */
     margin: 20px;
     padding: 10px;
     border-radius: 20px;
@@ -203,7 +204,6 @@ header{
     padding: 20px;
 }
 .canabis-info h4{
-    /* font-size: xx-large; */
     font-size: larger;
     margin-top: 15px;
 }
@@ -219,6 +219,7 @@ header{
     display: none;
 }
 /* styles for news-letter section end here */
+
 
 /* styles for footer section start here */
 .footer-div{
@@ -304,7 +305,7 @@ header{
     
 }
 
-/* styles for desktop */
+/* styles for laptop */
 @media screen and (min-width: 992px) {
     .card-group{
         flex-direction: row;

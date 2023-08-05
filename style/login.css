@@ -10,6 +10,7 @@
     margin: 0 auto;
 }
 
+/***************styles for form section ******************/
 #form-section{
     height: 90vh;
     display: flex;
@@ -27,13 +28,14 @@
 }
 
   
-
+/***************styles for input field ******************/
 .input-field{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
+/***************styles for input lebel field ******************/
 .input-field label{
     color: aliceblue;
     font-weight: bold;
@@ -60,6 +62,8 @@
 .input-field button:hover{
     cursor: pointer;
 }
+
+/***************styles for paragraph ******************/
 #sign-up-form>form>p{
     color: aliceblue;
     margin-top: 10px;
@@ -70,10 +74,8 @@
 
 
 
-/* styles for notepad */
+/*************** styles for notepad,laptop and desktop ********************/
 @media only screen and (min-width: 768px) {
-
-
     #sign-up-form{
         width: 40%;
     }
